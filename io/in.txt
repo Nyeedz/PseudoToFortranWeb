@@ -1,0 +1,38 @@
+INICIO
+
+    var base : INTEIRO
+    var expoente : INTEIRO
+    var cont : INTEIRO
+    var resp : INTEIRO
+    var valida : INTEIRO
+    
+    ESCREVA "Potenciacao usando loop"
+    
+     ESCREVA "DIGITE A BASE"
+     LEIA base
+        
+    valida <- 0
+    ENQUANTO valida < 1 FACA
+       
+        ESCREVA "DIGITE O EXPOENTE"
+        LEIA expoente
+        SE expoente >= 0 ENTAO 
+            valida <- 1
+        FIM_SE
+        
+    FIM_ENQUANTO
+    
+    
+    SE expoente == 0 ENTAO
+        resp <- 1
+    SENAO
+        resp <- 1
+        PARA cont = 1 ATE expoente FACA
+            resp <- resp * base
+        FIM_PARA   
+    FIM_SE
+    
+    ESCREVA "Resposta"
+    ESCREVA resp    
+    
+FIM

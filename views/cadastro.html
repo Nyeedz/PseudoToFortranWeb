@@ -1,0 +1,71 @@
+<div class="container">
+	<div class="row main">
+		<div class="panel-heading">
+           <div class="panel-title text-center">
+           		<h1 class="title">PseudoToFortran</h1>
+           		<hr />
+           	</div>
+        </div> 
+		<div class="main-login main-center">
+			<form class="form-horizontal" name="formCadastro">
+				
+				<div class="form-group">
+					<label for="name" class="cols-sm-2 control-label">Nome</label>
+					<div class="cols-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+							<input type="text" class="form-control" ng-model="cadastro.nome"  placeholder="Entre com seu nome"required/>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="email" class="cols-sm-2 control-label">Email</label>
+					<div class="cols-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i></span>
+							<input type="email" class="form-control" ng-model="cadastro.email"  placeholder="Entre com seu e-mail" required/>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="username" class="cols-sm-2 control-label">Senha</label>
+					<div class="cols-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
+							<input type="password" class="form-control" ng-model="cadastro.senha"  placeholder="Entre com sua senha" required/>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="password" class="cols-sm-2 control-label">Confirmar Senha</label>
+					<div class="cols-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
+							<input type="password" class="form-control" ng-model="cadastro.csenha"  placeholder="Repita sua senha" required/>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="confirm" class="cols-sm-2 control-label">Data de Nascimento</label>
+					<div class="cols-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+							<input type="date" class="form-control" ng-model="cadastro.dataNasc"  placeholder="Entre com sua data de nascimento" required/>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group ">
+					<button type="button" class="btn btn-primary btn-lg btn-block login-button" ng-click="cadastrar()"ng-disabled="formCadastro.$invalid">Cadastrar</button>
+				</div>
+				<div class="login-register">
+		            <a href="#/login">Login</a>
+		         </div>
+			</form>
+		</div>
+	</div>
+</div>

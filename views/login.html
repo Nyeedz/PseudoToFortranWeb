@@ -1,0 +1,44 @@
+<div class="container">
+	<div class="row main">
+		<div class="panel-heading">
+           <div class="panel-title text-center">
+           		<h1 class="title">PseudoToFortran</h1>
+           		<hr />
+           	</div>
+        </div> 
+		<div class="main-login main-center">
+			<form class="form-horizontal" name="formLogin">
+				
+				<div class="form-group">
+	
+				<div class="form-group">
+					<label for="email" class="cols-sm-2 control-label">Email</label>
+					<div class="cols-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i></span>
+							<input type="text" class="form-control" ng-model="login.email"  placeholder="Entre com seu e-mail"required/>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="username" class="cols-sm-2 control-label">Senha</label>
+					<div class="cols-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
+							<input type="password" class="form-control" ng-model="login.senha"  placeholder="Entre com sua senha"required/>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="form-group ">
+					<button type="button" class="btn btn-primary btn-lg btn-block login-button" ng-click="logar()"ng-disabled="formLogin.$invalid">Entrar</button>
+				</div>
+				<div class="login-register">
+		            <a href="#/cadastro">Não está cadastrado? Cadastre-se agora!</a>
+		         </div>
+			</form>
+		</div>
+	</div>
+</div>

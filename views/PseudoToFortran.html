@@ -1,0 +1,55 @@
+<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+	   	   <a class="navbar-brand" href>
+	        <img alt="Brand" src="img/pseudo.png" width="40px" style="display: inline-block; padding:0; margin:0;">PseudoToFortran - {{login.nome}}
+	      </a>
+	    </div>
+	    <p class="navbar-text navbar-right"><button ng-click="sair()">Sair</button></p>
+    </div>
+</nav>
+<div class="container paginaPrincipal">
+	<div class="row">
+		<!-- Lado Pseudo -->
+		<div class="col-md-6">
+			<h1>Pseudo</h1>
+			<textarea name="textPseudo" ng-model="$root.textPseudo"></textarea>
+			<!-- Botoes -->
+			<div class="row botoes">
+				<div class="col-md-4">
+					 <button type="button" class="btn btn-primary" name="btVerificarP" ng-click="verificaP()">Verificar</button>
+				</div>
+				<div class="col-md-4">
+					<button type="button" class="btn btn-success" name="btTraduzirP" ng-click="traduzir()">Traduzir</button>
+				</div>
+				<div class="col-md-4">
+					<button type="button" class="btn btn-danger" ng-click="limparCampo('textPseudo')">Limpar</button>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Lado Fortran -->
+		<div class="col-md-6">
+			<h1>Fortran</h1>
+			<textarea name="textFortran" ng-model="$root.textFortran"></textarea>
+				<!-- Botoes -->
+			<div class="row botoes">
+				<div class="col-md-3">
+					 <button type="button" class="btn btn-primary" ng-click="verificaF()">Verificar</button>
+				</div>
+				<div class="col-md-3">
+					<button type="button" class="btn btn-success" ng-click="salvar()">Salvar</button>
+				</div>
+				<div class="col-md-3">
+					<button type="button" class="btn btn-info" ng-click="lista()">Lista</button>
+				</div>
+				<div class="col-md-3">
+					<button type="button" class="btn btn-danger" ng-click="limparCampo('textFortran')">Limpar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>

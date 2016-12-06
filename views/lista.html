@@ -1,0 +1,18 @@
+<table class="table table-striped lista">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Código Pseudo</th>
+        <th>Código Fortran</th>
+        <th>Carregar Cod</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="cod in dadosCod">
+        <td>{{cod.nome}}</td>
+        <td>{{cod.codigo_fortran}}</td>
+        <td>{{cod.codigo_pseudo}}</td>
+        <td><img src="img/mao.png" ng-click="carregarCod(cod.cod)" width="50px" height="50px"></td>
+      </tr>
+    </tbody>
+</table>
